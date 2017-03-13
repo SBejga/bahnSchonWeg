@@ -1,15 +1,20 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Abfahrten
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h1>bahnSchonWeg</h1>
-  <h5>ist die Bahn schon weg?</h5>
-  <br/>
-  <iframe width="100%" height="315" src="https://www.youtube.com/embed/mkK22HsrbFM" frameborder="0" allowfullscreen>
-  </iframe>
+<ion-content>
+  <ion-list>
+    <ion-list-header>{{station}}</ion-list-header>
+    <ion-item *ngFor="let dep of departures">
+      <ion-avatar item-left>
+        <img src="https://api.adorable.io/avatars/285/{{dep.direction}}.png">
+      </ion-avatar>
+      <h2>{{dep.name}} <span>nach {{dep.direction}}</span></h2>
+      <p>Ab: {{dep.time}} Uhr auf Gleis {{dep.track}}</p>
+    </ion-item>
+  </ion-list>
 </ion-content>

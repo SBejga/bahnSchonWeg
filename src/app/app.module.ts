@@ -3,6 +3,8 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 
+import { BahnFahrplan } from '../providers/bahn-fahrplan';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -16,6 +18,8 @@ import { HomePage } from '../pages/home/home';
     MyApp,
     HomePage
   ],
-  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
+  providers: [
+    BahnFahrplan,
+    {provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
 export class AppModule {}

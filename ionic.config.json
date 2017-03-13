@@ -2,5 +2,9 @@
   "name": "bahnSchonWeg",
   "app_id": "",
   "v2": true,
-  "typescript": true
+  "typescript": true,
+  "proxies": [{
+    "path": "/bahnproxy",
+    "proxyUrl": "https://open-api.bahn.de/bin/rest.exe"
+  }]
 }
