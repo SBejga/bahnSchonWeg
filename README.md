@@ -6,7 +6,7 @@ It fetches the timetable of deutsche bahn Open Data API and shows the departures
 
 ## Deutsche Bahn Open Data
 
-it uses the API of [http://data.deutschebahn.com/dataset/api-fahrplan%20/](http://data.deutschebahn.com/dataset/api-fahrplan%20/).
+it uses the API of [http://data.deutschebahn.com/dataset/api-fahrplan/](http://data.deutschebahn.com/dataset/api-fahrplan/).
 
 To get access you have to ask DB Open-Data-Team (DBOpenData@deutschebahn.com) for a API Key / authKey.
 
